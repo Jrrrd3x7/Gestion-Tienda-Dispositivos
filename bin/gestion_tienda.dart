@@ -21,7 +21,7 @@ void main(List<String> arguments) {
     print("2 - Eliminar dispositivo: ");
     print("3 - Modificar dispositivo: ");
     print("4 - Salir");
-    stdout.write('Elige una opcion: ');
+    print('Elige una opcion: ');
     menu = int.parse(stdin.readLineSync()!);
 
     switch (menu) {
