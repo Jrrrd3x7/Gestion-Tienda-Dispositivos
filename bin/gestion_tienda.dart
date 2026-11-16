@@ -16,6 +16,7 @@ void main(List<String> arguments) {
   int? menu;
 
   do {
+    print(dispositivos);
     print("1 - Crear dispositivo: ");
     print("2 - Eliminar dispositivo: ");
     print("3 - Modificar dispositivo: ");
@@ -41,8 +42,7 @@ void main(List<String> arguments) {
         break;
     }
   } while (menu != 4);
-  //Ordenador pc = Ordenador('1', 'Asus', 'ROG', 2022, 16, 512);
-  //pc.conectarRed("12345");
+
 }
 
 void crearDispositivo() {
