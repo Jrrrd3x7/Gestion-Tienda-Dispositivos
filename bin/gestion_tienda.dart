@@ -65,7 +65,7 @@ void crearDispositivo() {
     }
 
     stdout.write('Introduce ID: ');
-    String id = stdin.readLineSync()!;
+    String id = stdin.readLineSync()!.toUpperCase();
     if (!buscarPorId(id)) {
       print('Todo va bien Jordi');
 
