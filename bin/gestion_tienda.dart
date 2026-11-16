@@ -21,7 +21,7 @@ void main(List<String> arguments) {
     print("2 - Eliminar dispositivo: ");
     print("3 - Modificar dispositivo: ");
     print("4 - Salir");
-    print('Elige una opcion: ');
+    stdout.write('Elige una opcion: ');
     menu = int.parse(stdin.readLineSync()!);
 
     switch (menu) {
@@ -164,7 +164,7 @@ void crearDispositivo() {
 }
 
 void eliminarDispositivo() {
-  stdout.write('Id del dispositivo a eliminar');
+  stdout.write('ID del dispositivo a eliminar: ');
   String id = stdin.readLineSync()!.toUpperCase();
   if (buscarPorId(id)) {
     dispositivos.remove(id);
